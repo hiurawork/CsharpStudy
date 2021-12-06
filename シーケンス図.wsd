@@ -1,0 +1,13 @@
+' シーケンス図
+@startuml sequence
+mainframe シーケンス図
+
+activate Program
+
+Program -> SavingsAccount : 1：Createメッセージ()
+
+activate SavingsAccount
+
+Program -> SavingsAccount : ShowLoan()
+
+@enduml

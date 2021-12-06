@@ -1,0 +1,19 @@
+' クラス図
+@startuml class
+mainframe Aクラス図
+
+class Acount {
+  + Name: string
+  + Blance: int
+  + ShwAccount(): void
+}
+
+class SavingsAcount {
+  - loan: int
+  + TakeLoan(monay: int): void
+  + ShowLoan(): void
+}
+
+Acount <|-- SavingsAcount
+
+@enduml
